@@ -272,6 +272,23 @@ display: flex;
     padding: 8px var(--largscale);
     width: 100%;
     box-shadow: var(--shadow8dp);
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+  }
+  #nav_con_fix{
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: var(--primary-con);
+    color: var(--onprimary-con);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px var(--largscale);
+    width: 100%;
+    box-shadow: var(--shadow8dp);
+    z-index: 10000;
   }
   
   #nav_logo {
@@ -317,13 +334,13 @@ display: flex;
   }
   
   @media only screen and (max-width: 1000px) {
-    #nav_con {
+    #nav_con  , #nav_con_fix{
       padding: 8px var(--mediumscale);
     }
   }
   
   @media only screen and (max-width: 720px) {
-    #nav_con {
+    #nav_con  , #nav_con_fix{
       padding: 8px var(--mediumscale);
     }
     #nav_logo {
@@ -332,7 +349,7 @@ display: flex;
   }
   
   @media only screen and (max-width: 550px) {
-    #nav_con {
+    #nav_con  , #nav_con_fix {
       padding: 8px var(--smallscale);
     }
   
@@ -383,7 +400,7 @@ font-family: "commissioner-bold";
     align-items: center;
     box-shadow: var(--shadow1dp);
     cursor: default;
-    margin-top: 3rem;
+    margin-top: 6.5rem;
     margin-bottom: 2rem;
     
 }
@@ -1036,21 +1053,7 @@ list-style-type: none;
 }
 
 @media only screen and (max-width:730px) {
-        /* .recipeDetailCard_top{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        
-        }
 
-        .recipeDetailCard_top_Img{
-            width: 100%;
-            height: 20rem;
-            }
-            
-            .recipeDetailCard_top_title{
-                height: 35%;
-            } */
 
 
             .recipeDetailCard_bottom{            
@@ -1079,7 +1082,7 @@ list-style-type: none;
             }
             
             .recipeDetailCard_bottom_recipe_con ul{
-            list-style-type: decimal;
+
             }
             
             .recipeDetailCard_bottom_recipe_con ul li{
@@ -1240,7 +1243,7 @@ min-height: 100vh;
 width: 100%;
 position: relative;
 z-index: 0;
-padding: 3rem var(--largscale);
+padding: 6.5rem var(--largscale);
 }
 
 .rare_data_con{
@@ -1285,7 +1288,7 @@ margin-bottom: 1.5rem;
    
 @media only screen and (max-width:1000px) {
     #about_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
     
@@ -1297,7 +1300,7 @@ margin-bottom: 1.5rem;
 @media only screen and (max-width:720px) {
 
     #about_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
 }
@@ -1306,7 +1309,7 @@ margin-bottom: 1.5rem;
 @media only screen and (max-width:550px) {
 
     #about_detail_con{
-        padding: 3rem var(--smallscale);
+        padding: 6.5rem var(--smallscale);
         }
 
 }
@@ -1327,7 +1330,7 @@ margin-bottom: 1.5rem;
     height: auto;
     width: 100%;
     min-height: 100vh;
-    padding: 3rem var(--largscale);
+    padding: 6.5rem var(--largscale);
 }
 
 
@@ -1337,7 +1340,7 @@ margin-bottom: 1.5rem;
 
 @media only screen and (max-width:1000px) {
     #faq_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
     
@@ -1349,7 +1352,7 @@ margin-bottom: 1.5rem;
 @media only screen and (max-width:720px) {
 
     #faq_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
 }
@@ -1358,7 +1361,7 @@ margin-bottom: 1.5rem;
 @media only screen and (max-width:550px) {
 
     #faq_detail_con{
-        padding: 3rem var(--smallscale);
+        padding: 6.5rem var(--smallscale);
         }
 
 }
@@ -1371,13 +1374,15 @@ margin-bottom: 1.5rem;
 #apiRef_con{
     background-color: var(--onbg);
     width: 100%;
+    height: 100%;
 }
 
 #apiRef_detail_con{
     height: auto;
     width: 100%;
     min-height: 100vh;
-    padding: 3rem var(--largscale);
+    padding: 6.5rem var(--largscale);
+    
 }
 
 
@@ -1386,16 +1391,17 @@ margin-bottom: 1.5rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
 
 .apiRefBtn{
-    font-family: "commissioner-semibold";
+    font-family: "commissioner-bold";
 }
 
    
 @media only screen and (max-width:1000px) {
     #apiRef_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
     
@@ -1407,7 +1413,7 @@ margin-bottom: 1.5rem;
 @media only screen and (max-width:720px) {
 
     #apiRef_detail_con{
-        padding: 3rem var(--mediumscale);
+        padding: 6.5rem var(--mediumscale);
         }
 
 }
@@ -1416,7 +1422,7 @@ margin-bottom: 1.5rem;
 @media only screen and (max-width:550px) {
 
     #apiRef_detail_con{
-        padding: 3rem var(--smallscale);
+        padding: 6.5rem var(--smallscale);
         }
 
 }
@@ -1585,5 +1591,23 @@ color:rgba(48, 20, 0,0.6)
             text-decoration: underline var(----tertiary-con);
 }
 
+
+
+::-webkit-scrollbar {
+  width: 1px
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
 
 
