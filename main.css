@@ -278,7 +278,7 @@ display: flex;
   }
   #nav_con_fix{
     position: fixed;
-    top:0;
+    top:0; 
     width:100%;
     background-color: var(--primary-con);
     color: var(--onprimary-con);
@@ -1077,9 +1077,9 @@ list-style-type: none;
                 width: 100%;
 
             }
-            .recipeDetailCard_bottom_recipe_con{
-                padding:0rem 0rem 0rem 1rem;
-            }
+            /* .recipeDetailCard_bottom_recipe_con{
+                padding:0rem 0rem 0rem 0rem;
+            } */
             
             .recipeDetailCard_bottom_recipe_con ul{
 
